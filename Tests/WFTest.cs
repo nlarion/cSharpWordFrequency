@@ -10,19 +10,22 @@ namespace  WordFrequency
     [Fact]
     public void TestRepeatCounter()
     {
-      Assert.Equal(1, RepeatCounter.CountRepeats("Hello world","world"));
+      RepeatCounter repeatCounter = new RepeatCounter("Hello world","world");
+      Assert.Equal(1, repeatCounter.CountRepeats());
     }
 
     [Fact]
     public void TestRepeatCounterForEmpty()
     {
-      Assert.Equal(0, RepeatCounter.CountRepeats("",""));
+      RepeatCounter repeatCounter = new RepeatCounter("","");
+      Assert.Equal(0, repeatCounter.CountRepeats());
     }
 
     [Fact]
     public void TestRepeatCounterLongTest()
     {
-      Assert.Equal(2, RepeatCounter.CountRepeats("Hello world! This is a complex sentence with multiple things to try and trick the counter. What a WORLD.","world"));
+      RepeatCounter repeatCounter = new RepeatCounter("Hello world! This is a complex sentence with multiple things to try and trick the counter. What a WORLD.","world");
+      Assert.Equal(2, repeatCounter.CountRepeats());
     }
     
     [Fact]

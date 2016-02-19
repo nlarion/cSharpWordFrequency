@@ -4,15 +4,24 @@ using System.Collections.Generic;
 
 namespace WordFrequency
 {
-  public static class RepeatCounter
+  public class RepeatCounter
   {
-    public static int CountRepeats(string sentence, string word)
+    private string _sentence;
+    private string _word;
+
+    public RepeatCounter (string sentence, string word)
+    {
+      _sentence = sentence;
+      _word = word;
+    }
+
+    public int CountRepeats()
     {
       int returnInt = 0;
-      List<string> sentenceWords = ListOfWordsFromSentence(sentence);
+      List<string> sentenceWords = ListOfWordsFromSentence(_sentence);
       foreach(string singleWord in sentenceWords)
       {
-        if (TrueWhenCharArraysAreEqual(LowerCharArrayFromString(word),LowerCharArrayFromString(singleWord)))
+        if (TrueWhenCharArraysAreEqual(LowerCharArrayFromString(_word),LowerCharArrayFromString(singleWord)))
         {
           returnInt++;
         }
@@ -44,5 +53,6 @@ namespace WordFrequency
       } 
       return charArray1.SequenceEqual(charArray2);
     }
+
   }
 }
