@@ -25,5 +25,10 @@ namespace WordFrequency
       return word.ToLower().ToCharArray();
     }
 
+    public static List<string> ReturnListOfWordsFromSentence(string sentence)
+    {
+      return new List<string>{sentence};
+    }
+
   }
 }
