@@ -15,7 +15,7 @@ namespace WordFrequency
       _word = word;
     }
 
-    public static int CountRepeats()
+    public int CountRepeats()
     {
       return 0;
     }

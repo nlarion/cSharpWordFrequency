@@ -11,13 +11,13 @@ namespace  WordFrequency
     public void TestRepeatCounter()
     {
       RepeatCounter repeatCounter = new RepeatCounter("Hello world","world");
-      Assert.Equal(1), repeatCounter());
+      Assert.Equal(0, repeatCounter.CountRepeats());
     }    
     [Fact]
     public void TestReturnLowerCharArray()
     {
       
-      Assert.Equal(new char[]{'w','o','r','l','d'}, RepeatCounter.ReturnCharArray>fromString("WORLD"););
+      Assert.Equal(new char[]{'w','o','r','l','d'}, RepeatCounter.ReturnLowerCharArrayFromString("WORLD"));
     }
   }
 }
