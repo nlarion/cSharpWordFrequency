@@ -9,12 +9,10 @@ namespace WordFrequency
     public static int CountRepeats(string sentence, string word)
     {
       int returnInt = 0;
-      char[] userWordCharArray = LowerCharArrayFromString(word);
       List<string> sentenceWords = ListOfWordsFromSentence(sentence);
       foreach(string singleWord in sentenceWords)
       {
-        char[] singleWordCharArray = LowerCharArrayFromString(singleWord);
-        if (TrueWhenCharArraysAreEqual(userWordCharArray,singleWordCharArray))
+        if (TrueWhenCharArraysAreEqual(LowerCharArrayFromString(word),LowerCharArrayFromString(singleWord)))
         {
           returnInt++;
         }
