@@ -10,8 +10,7 @@ namespace  WordFrequency
     [Fact]
     public void TestRepeatCounter()
     {
-      RepeatCounter repeatCounter = new RepeatCounter("Hello world","world");
-      Assert.Equal(0, repeatCounter.CountRepeats());
+      Assert.Equal(1, RepeatCounter.CountRepeats("Hello world","world"));
     }    
     
     [Fact]

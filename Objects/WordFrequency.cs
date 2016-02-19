@@ -6,16 +6,16 @@ namespace WordFrequency
 {
   public class RepeatCounter
   {
-    private string _sentence;
-    private string _word;
+    // private string _sentence;
+    // private string _word;
 
-    public RepeatCounter (string sentence, string word)
-    {
-      _sentence = sentence;
-      _word = word;
-    }
+    // public RepeatCounter (string sentence, string word)
+    // {
+    //   _sentence = sentence;
+    //   _word = word;
+    // }
 
-    public int CountRepeats()
+    public static int CountRepeats(string sentence, string word)
     {
       return 0;
     }
@@ -38,8 +38,14 @@ namespace WordFrequency
 
     public static bool ReturnTrueWhenCharArraysAreEqual(char[] charArray1, char[] charArray2)
     {
-      return false;
+      if(charArray1.SequenceEqual(charArray2))
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
-
   }
 }
