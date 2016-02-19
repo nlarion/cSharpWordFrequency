@@ -29,7 +29,7 @@ namespace WordFrequency
 
     public static List<string> ListOfWordsFromSentence(string sentence)
     {
-      List<string> returnList = new List<string>{};
+      List<string> returnList = new List<string>();
       string[] stringArray = sentence.Split(' ',',','.','!','?');
       foreach(string singleString in stringArray)
       {
@@ -40,14 +40,7 @@ namespace WordFrequency
 
     public static bool TrueWhenCharArraysAreEqual(char[] charArray1, char[] charArray2)
     {
-      if(charArray1.SequenceEqual(charArray2))
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
+      return charArray1.SequenceEqual(charArray2);
     }
   }
 }
