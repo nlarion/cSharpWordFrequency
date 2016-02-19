@@ -36,5 +36,10 @@ namespace WordFrequency
       return returnList;
     }
 
+    public static bool ReturnTrueWhenCharArraysAreEqual(char[] charArray1, char[] charArray2)
+    {
+      return false;
+    }
+
   }
 }

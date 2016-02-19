@@ -23,8 +23,13 @@ namespace  WordFrequency
     [Fact]
     public void TestReturnListOfWordsFromSentence()
     {
-      
       Assert.Equal(new List<string>{"This","is","a","split","sentence"}, RepeatCounter.ReturnListOfWordsFromSentence("This is a split sentence"));
+    }
+
+    [Fact]
+    public void TestReturnTrueWhenCharArraysAreEqual()
+    {
+      Assert.Equal(true, RepeatCounter.ReturnTrueWhenCharArraysAreEqual(new char[]{'y','e','s'},new char[]{'y','e','s'}));
     }
   }
 }
