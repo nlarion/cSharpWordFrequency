@@ -4,28 +4,30 @@ using System.Collections.Generic;
 
 namespace WordFrequency
 {
-  public class RepeatCounter
+  public static class RepeatCounter
   {
-    // private string _sentence;
-    // private string _word;
-
-    // public RepeatCounter (string sentence, string word)
-    // {
-    //   _sentence = sentence;
-    //   _word = word;
-    // }
-
     public static int CountRepeats(string sentence, string word)
     {
-      return 0;
+      int returnInt = 0;
+      char[] userWordCharArray = LowerCharArrayFromString(word);
+      List<string> sentenceWords = ListOfWordsFromSentence(sentence);
+      foreach(string singleWord in sentenceWords)
+      {
+        char[] singleWordCharArray = LowerCharArrayFromString(singleWord);
+        if (TrueWhenCharArraysAreEqual(userWordCharArray,singleWordCharArray))
+        {
+          returnInt++;
+        }
+      }
+      return returnInt;
     }
 
-    public static char[] ReturnLowerCharArrayFromString(string word)
+    public static char[] LowerCharArrayFromString(string word)
     {
       return word.ToLower().ToCharArray();
     }
 
-    public static List<string> ReturnListOfWordsFromSentence(string sentence)
+    public static List<string> ListOfWordsFromSentence(string sentence)
     {
       List<string> returnList = new List<string>{};
       string[] stringArray = sentence.Split(' ',',','.','!','?');
@@ -36,7 +38,7 @@ namespace WordFrequency
       return returnList;
     }
 
-    public static bool ReturnTrueWhenCharArraysAreEqual(char[] charArray1, char[] charArray2)
+    public static bool TrueWhenCharArraysAreEqual(char[] charArray1, char[] charArray2)
     {
       if(charArray1.SequenceEqual(charArray2))
       {

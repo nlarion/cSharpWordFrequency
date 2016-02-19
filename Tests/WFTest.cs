@@ -16,19 +16,19 @@ namespace  WordFrequency
     [Fact]
     public void TestReturnLowerCharArray()
     {
-      Assert.Equal(new char[]{'w','o','r','l','d'}, RepeatCounter.ReturnLowerCharArrayFromString("WORLD"));
+      Assert.Equal(new char[]{'w','o','r','l','d'}, RepeatCounter.LowerCharArrayFromString("WORLD"));
     }    
 
     [Fact]
     public void TestReturnListOfWordsFromSentence()
     {
-      Assert.Equal(new List<string>{"This","is","a","split","sentence"}, RepeatCounter.ReturnListOfWordsFromSentence("This is a split sentence"));
+      Assert.Equal(new List<string>{"This","is","a","split","sentence"}, RepeatCounter.ListOfWordsFromSentence("This is a split sentence"));
     }
 
     [Fact]
     public void TestReturnTrueWhenCharArraysAreEqual()
     {
-      Assert.Equal(true, RepeatCounter.ReturnTrueWhenCharArraysAreEqual(new char[]{'y','e','s'},new char[]{'y','e','s'}));
+      Assert.Equal(true, RepeatCounter.TrueWhenCharArraysAreEqual(new char[]{'y','e','s'},new char[]{'y','e','s'}));
     }
   }
 }
