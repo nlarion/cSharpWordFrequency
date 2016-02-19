@@ -11,6 +11,12 @@ namespace  WordFrequency
     public void TestRepeatCounter()
     {
       Assert.Equal(1, RepeatCounter.CountRepeats("Hello world","world"));
+    }        
+
+    [Fact]
+    public void TestRepeatCounter2()
+    {
+      Assert.Equal(2, RepeatCounter.CountRepeats("Hello world! This is a complex sentence with multiple things to try and trick the counter. What a WORLD.","world"));
     }    
     
     [Fact]
