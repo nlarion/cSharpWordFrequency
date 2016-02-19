@@ -38,6 +38,10 @@ namespace WordFrequency
 
     public static bool TrueWhenCharArraysAreEqual(char[] charArray1, char[] charArray2)
     {
+      if(charArray1.Length == 0 || charArray2.Length == 0)
+      {
+        return false;
+      } 
       return charArray1.SequenceEqual(charArray2);
     }
   }
