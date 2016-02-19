@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results Page</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='Content/css/styles.css'>
+  </head>
+  <body>
+    <div class="container">
+      @{
+        if(Model!=null)
+        {
+            <h1>Number of Matches: @Model</h1>
+        }
+      }
+      <a href="/">Return Home</a>
+    </div>
+  </body>
+</html>
