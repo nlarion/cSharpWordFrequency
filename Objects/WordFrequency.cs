@@ -27,7 +27,13 @@ namespace WordFrequency
 
     public static List<string> ReturnListOfWordsFromSentence(string sentence)
     {
-      return new List<string>{sentence};
+      List<string> returnList = new List<string>{};
+      string[] stringArray = sentence.Split(' ');
+      foreach(string singleString in stringArray)
+      {
+        returnList.Add(singleString);
+      }
+      return returnList;
     }
 
   }
