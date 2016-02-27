@@ -1,6 +1,0 @@
-SPECS:
-
-Should be able to take a string and return a char array.
-Should be able to split a sting of multiple words into individual words and return each word in a list of strings.
-Should return true when two char arrays are the same
-Should be able to return and int count of the number of char array matches

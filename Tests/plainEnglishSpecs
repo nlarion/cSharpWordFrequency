@@ -1,0 +1,39 @@
+Plain English Specs
+
+Application will take two inputs from the user, A Sentence and a word to match in said sentence - then the application will return the number of matches of the word.
+
+Test 1:
+User Enters the sentence "world" and requests that the application match the word "world". The return that we get back will be 1. This is the simpliest test we can run on the program since it's only one word and the match for that word.
+
+Test 2:
+User Enters the sentence "Hello world" and requests that the application match the word "world". The return that we get back will be 1. This is the second simpliest test we can run on the program since it's only a two word sentence and the match for one word.
+
+Test 3:
+User Enters the sentence "world world world" and requests that the application match the word "world". The return that we get back will be 3. This is the Thrid simpliest test we can run on the program since it's only a three word sentence and the match for the word three times.
+
+Test 4:
+User Enters the sentence "Hello World" and requests that the application match the word "world". The return that we get back will be 1. This is the Forth simpliest test we can run on the program since it's testing for the matching word has a capital letter.
+
+Test 5:
+User Enters the sentence "Hello world!" and requests that the application match the word "world". The return that we get back will be 1. This is the fith simpliest test we can run on the program since it's testing for the matching word when its followed by a special character.
+
+Test 6:
+User Enters the sentence "Hello World!" and requests that the application match the word "world". The return that we get back will be 1. This is the sixth simpliest test we can run on the program since it's testing for the matching word when its followed by a special character and it has a capital.
+
+Test 7:
+User Enters the sentence "HelloWorld!" and requests that the application match the word "world". The return that we get back will be 0. This is the seventh simpliest test we can run on the program since it's testing for the matching word when it's apart of another word.
+
+Test 8:
+User Enters the sentence "Hello world! This is a complex sentence with multiple things to try and trick the counter. Like this: helloworld. What a WORLD." and requests that the application match the word "world". The return that we get back will be 2. This is the eighth simpliest test we can run on the program since it's testing the previous tests combined into one sentence.
+
+Test 9: 
+User Enters the sentence "world world" and the word to mach "World". The method should return 1 and ignore case in the matching word. This is the ninth simplest test since we're testing for matching word irregularities.
+
+Test 10: 
+User Enters the sentence "world world" and the word to match "". The method should return 0 and because there is no supplied word to match - it's just an empty string. This is the tenth simplest test since we're testing for matching word input irregularities.
+
+Test 11: 
+User Enters the sentence "" and the word to match "world". The method should return 0 and because there is no supplied sentence to match - it's just an empty string. This is the eleventh simplest test since we're testing for matching sentence input irregularities.
+
+Test 12: 
+User Enters the sentence "" and the word to match "". The method should return 0 and because there is no supplied word to match or sentence- they're both just an empty string. This is the twelfth simplest test since we're testing for matching word and sentence input irregularities.
